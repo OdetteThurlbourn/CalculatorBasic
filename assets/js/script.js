@@ -1,5 +1,4 @@
 // Setting all the inputs and functions for the calculator that will be called
-
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement
@@ -7,48 +6,86 @@ class Calculator {
         this.clear()
     }
 
-// Defining the specific functions of the calculator
+    // Defining the specific functions of the calculator
+    /* Defult to an empty string(1.currentOperand 2. previousOperand 3.operation) */
+    clear() {
+        this.currentOperand = ''
+        this.perviousOperand = ''
+        this.operation = undefined
 
-/* Defult to an empty string(1.currentOperand 2. previousOperand 3.operation) */
+    }
 
-clear() {
-    this.currentOperand = ''
-    this.perviousOperand =''
+    delete() {
+
+    }
+
+    /* Convert to a string because we want the numbers appended on the display, not added.*/
+    //Add if statement so '.' can only be selected once
+    appendNumber(number) {
+        if (number === '.' && this.currentOperand.includes('.')) return
+        this.currentOperand = this.currentOperand.toString() + number.toString()
+    }
+
+    /* chooseOperation decides what happens when a user clicks on the calculator buttons 
+     * Effectivley setting the function to clear out the previous operand and allowing a current operand to be set
+     */
+    //if statement - if curentOperand is '.' then return and do not execute further into the code
+    // if statement  - if string is not empty and operation is selected compute that string (update variables as needed)
+    chooseOperation(operation) {
+        if (this.currentOperand === '') return
+        if (this.previousOperand !== '') {
+          this.compute()
+        }
+        this.operation = operation
+        this.previousOperand = this.currentOperand
+        this.currentOperand = ''
+      }
+    
+    /* Create variable that will be result of compute function
+     * Add parseFloat to convert string to a number
+    */
+   //if statement - if no user input, no code must run using OR operator
+   // Using Switch statement to allow for multiple if statments on a funtion
+   // else statement with 'defult' incase non of our operators were selected
+   compute() {
+    let computation
+    const prev = parseFloat(this.previousOperand)
+    const current = parseFloat(this.currentOperand)
+    if (isNaN(prev) || isNaN(current)) return
+    switch (this.operation) {
+      case '+':
+        computation = prev + current
+        break
+      case '-':
+        computation = prev - current
+        break
+      case '*':
+        computation = prev * current
+        break
+      case '÷':
+        computation = prev / current
+        break
+      default:
+        return
+    }
+    this.currentOperand = computation
     this.operation = undefined
+    this.previousOperand = ''
+  }
 
-}
-
-delete( ) {
-
-}
-
-/* Convert to a string because we want the numbers appended on the display, not added.*/
- 
-//Add if statement so '.' can only be selected once
-
-appendNumber(number) {
-    if (number === '.' && this.currentOperand.includes('.')) return
-    this.currentOperand = this.currentOperand.toString() + number.toString()
-}
-
-/* chooseOperation decides what happens when a user clicks on the calculator buttons */
-chooseOperation(operation) {
-
-}
-
-compute() {
-
-}
-
-updateDisplay() {
-    this.currentOperandTextElement.innerText = this.currentOperand
-}
+    /* Display the previousOperand and after a operation has been selected, display the currentOperand
+     * In conjusction with setting the chooseOperation function
+     */
+    updateDisplay() {
+        this.currentOperandTextElement.innerText = this.currentOperand
+        this.previousOperandTextElement.innerText = this.perviousOperand
+    }
 
 }
 
 /* Using data attributes to select the operations instead of using HTML classes to avoid confusion 
  * Easier to see what elements are being used by JS and HTML
-*/
+ */
 
 // Assign const variables to the calculator elements
 
@@ -68,19 +105,26 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 /* eventListeners for buttons 
  * append number onto display with whatever is inside that button
  * Call calculator to update display
-*/
+ */
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
-      calculator.appendNumber(button.innerText)
-      calculator.updateDisplay()
+        calculator.appendNumber(button.innerText)
+        calculator.updateDisplay()
     })
-  })
+})
 
 
-  /* eventListener for operations */
-  operationButtons.forEach(button => {
+/* eventListener for operations */
+operationButtons.forEach(button => {
     button.addEventListener('click', () => {
-      calculator.chooseOperation(button.innerText)
-      calculator.updateDisplay()
+        calculator.chooseOperation(button.innerText)
+        calculator.updateDisplay()
     })
-  })
+})
+
+/* eventListener for equals button */
+
+equalsButton.addEventListener('click', button => {
+    calculator.compute()
+    calculator.updateDisplay()
+})
