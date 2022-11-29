@@ -22,10 +22,12 @@ delete( ) {
 
 }
 
-/* Update the current appendNumber value and append the number we get passed 
- * Convert to a string because we want the numbers appended on the display, not added.
+/* Convert to a string because we want the numbers appended on the display, not added.
+ * 
+ * Add if statement so '.' can only be selected once
 */
 appendNumber(number) {
+    if (number === '.' && this.currentOperand.includes('.')) return
     this.currentOperand = this.currentOperand.toString() + number.toString()
 }
 
