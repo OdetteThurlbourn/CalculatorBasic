@@ -77,15 +77,35 @@ class Calculator {
     this.previousOperand = ''
   }
 
-/* HELPER FUNCTION - Return a number but convert it to a display number */
-  getDisplayNumber(number) {
-    return number
+/* HELPER FUNCTION - Return a number but convert it to a display number 
+ *Set number to a float value (parseFloat) - our number is a string and must be converted to a number first
+ */
+// if statement - if float number is NaN, return empty string ''
+// if the return is a number tolocalString then return a number in a language i.e English (en).
+// Commas will be added to the number the longer it gets, becasue we have changed the number into a Float value
+/* Split number and decimal so that decimal cannotbe called on its own using stringNumber and .split (split the string)*/
+getDisplayNumber(number) {
+    const stringNumber = number.toString()
+    const integerDigits = parseFloat(stringNumber.split('.')[0])
+    const decimalDigits = stringNumber.split('.')[1]
+    let integerDisplay
+    if (isNaN(integerDigits)) {
+      integerDisplay = ''
+    } else {
+      integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
+    }
+    if (decimalDigits != null) {
+      return `${integerDisplay}.${decimalDigits}`
+    } else {
+      return integerDisplay
+    }
   }
-    /* Display the previousOperand and after a operation has been selected, display the currentOperand
+    /* Display the previousOperand and after an operation has been selected, display the currentOperand
      * In conjusction with setting the chooseOperation function
      */
     // if statement - if the previousOperand is not (!=) equal to null then display the previousOperand
     // create a 'concatenation ${}'(method merges the contents of two or more strings) 
+    // Call getDisplayNumber fucntion
     updateDisplay() {
         this.currentOperandTextElement.innerText =
           this.getDisplayNumber(this.currentOperand)
