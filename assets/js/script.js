@@ -64,3 +64,16 @@ const previousOperandTextElement = document.querySelector('[data-previous-operan
 const currentOperandTextElement = document.querySelector('[data-current-operand]')
 
 
+/* Define a new class name for calculator, pass the pervious and current operands in*/
+const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
+
+/* eventListeners for buttons 
+ * append number onto display with whatever is inside that button
+ * Call calculator to update display
+*/
+numberButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.appendNumber(button.innText)
+        calculator.updateDisplay()
+    })
+})
