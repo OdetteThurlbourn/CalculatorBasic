@@ -22,8 +22,11 @@ delete( ) {
 
 }
 
+/* Update the current appendNumber value and append the number we get passed 
+ * Convert to a string because we want the numbers appended on the display, not added.
+*/
 appendNumber(number) {
-    this.currentOperand = number
+    this.currentOperand = this.currentOperand.toString() + number.toString()
 }
 
 /* chooseOperation decides what happens when a user clicks on the calculator buttons */
