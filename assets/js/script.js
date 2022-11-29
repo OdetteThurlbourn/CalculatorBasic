@@ -15,8 +15,12 @@ class Calculator {
 
     }
 
+    /* Set the currentOperand to the currentOperand and convert to a string
+     * Using the .Slice function we want to get hte very last value of the string and chop it off
+     * Going from the start of the index (0) to the second to last number (-1) in sequence
+    */
     delete() {
-
+        this.currentOperand = this.currentOperand.toString().slice(0, -1)
     }
 
     /* Convert to a string because we want the numbers appended on the display, not added.*/
@@ -73,15 +77,26 @@ class Calculator {
     this.previousOperand = ''
   }
 
+/* HELPER FUNCTION - Return a number but convert it to a display number */
+  getDisplayNumber(number) {
+    return number
+  }
     /* Display the previousOperand and after a operation has been selected, display the currentOperand
      * In conjusction with setting the chooseOperation function
      */
+    // if statement - if the previousOperand is not (!=) equal to null then display the previousOperand
+    // create a 'concatenation ${}'(method merges the contents of two or more strings) 
     updateDisplay() {
-        this.currentOperandTextElement.innerText = this.currentOperand
-        this.previousOperandTextElement.innerText = this.perviousOperand
+        this.currentOperandTextElement.innerText =
+          this.getDisplayNumber(this.currentOperand)
+        if (this.operation != null) {
+          this.previousOperandTextElement.innerText =
+            `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+        } else {
+          this.previousOperandTextElement.innerText = ''
+        }
+      }
     }
-
-}
 
 /* Using data attributes to select the operations instead of using HTML classes to avoid confusion 
  * Easier to see what elements are being used by JS and HTML
@@ -132,5 +147,11 @@ equalsButton.addEventListener('click', button => {
 /* eventListener for allClear button */
 allClearButton.addEventListener('click', button => {
     calculator.clear()
+    calculator.updateDisplay()
+  })
+
+  /* eventListener for delete button */
+  deleteButton.addEventListener('click', button => {
+    calculator.delete()
     calculator.updateDisplay()
   })
