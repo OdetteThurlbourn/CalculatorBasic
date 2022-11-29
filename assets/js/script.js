@@ -1,13 +1,20 @@
-// Taking all the inputs and functions for the calculator
+// Setting all the inputs and functions for the calculator that will be called
 
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement
         this.currentOperandTextElement = currentOperandTextElement
+        this.clear()
     }
+
 // Defining the specific functions of the calculator
 
+/* Defult to an empty string(1.currentOperand 2. previousOperand 3.operation) */
+
 clear() {
+    this.currentOperand = ''
+    this.perviousOperand =''
+    this.operation = undefined
 
 }
 
@@ -15,12 +22,22 @@ delete( ) {
 
 }
 
-appendNumber(){
+appendNumber(number) {
 
 }
 
 /* chooseOperation decides what happens when a user clicks on the calculator buttons */
-chooseOperation
+chooseOperation(operation) {
+
+}
+
+compute() {
+
+}
+
+updateDisplay() {
+
+}
 
 }
 
