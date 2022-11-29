@@ -1,3 +1,26 @@
+// Taking all the inputs and functions for the calculator
+
+class Calculator {
+    constructor(previousOperandTextElement, currentOperandTextElement) {
+        this.previousOperandTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currentOperandTextElement
+    }
+// Defining the functions of the calculator
+
+clear() {
+
+}
+
+delete( )
+}
+
+
+
+
+
+
+
+
 /* Using data attributes to select the operations instead of using HTML classes to avoid confusion 
  * Easier to see what elements are being used by JS and HTML
 */
