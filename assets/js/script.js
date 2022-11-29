@@ -22,10 +22,10 @@ delete( ) {
 
 }
 
-/* Convert to a string because we want the numbers appended on the display, not added.
- * 
- * Add if statement so '.' can only be selected once
-*/
+/* Convert to a string because we want the numbers appended on the display, not added.*/
+ 
+//Add if statement so '.' can only be selected once
+
 appendNumber(number) {
     if (number === '.' && this.currentOperand.includes('.')) return
     this.currentOperand = this.currentOperand.toString() + number.toString()
@@ -72,6 +72,15 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
       calculator.appendNumber(button.innerText)
+      calculator.updateDisplay()
+    })
+  })
+
+
+  /* eventListener for operations */
+  operationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      calculator.chooseOperation(button.innerText)
       calculator.updateDisplay()
     })
   })
