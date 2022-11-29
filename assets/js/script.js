@@ -23,7 +23,7 @@ delete( ) {
 }
 
 appendNumber(number) {
-
+    this.currentOperand = number
 }
 
 /* chooseOperation decides what happens when a user clicks on the calculator buttons */
@@ -36,17 +36,10 @@ compute() {
 }
 
 updateDisplay() {
-
+    this.currentOperandTextElement.innerText = this.currentOperand
 }
 
 }
-
-
-
-
-
-
-
 
 /* Using data attributes to select the operations instead of using HTML classes to avoid confusion 
  * Easier to see what elements are being used by JS and HTML
@@ -73,7 +66,7 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 */
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
-        calculator.appendNumber(button.innText)
-        calculator.updateDisplay()
+      calculator.appendNumber(button.innerText)
+      calculator.updateDisplay()
     })
-})
+  })
