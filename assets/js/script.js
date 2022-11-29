@@ -5,13 +5,23 @@ class Calculator {
         this.previousOperandTextElement = previousOperandTextElement
         this.currentOperandTextElement = currentOperandTextElement
     }
-// Defining the functions of the calculator
+// Defining the specific functions of the calculator
 
 clear() {
 
 }
 
-delete( )
+delete( ) {
+
+}
+
+appendNumber(){
+
+}
+
+/* chooseOperation decides what happens when a user clicks on the calculator buttons */
+chooseOperation
+
 }
 
 
