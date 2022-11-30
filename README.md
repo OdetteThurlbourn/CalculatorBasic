@@ -9,8 +9,6 @@ By using a mouse select or ‘click’ the numbers on the calculator face, this 
 Once you have selected your operator, enter the second set of  integers and ‘click’ on the **‘=’** sign to return your result which will be displayed on the calculator screen (display). 
 ![RespCalcu](https://user-images.githubusercontent.com/108287233/204855821-736d8afe-2b36-44ad-b562-b62251f6252d.png)
 
-
-
 ## Inspiration
 ![ProjectInspiration](https://user-images.githubusercontent.com/108287233/204846027-b1b8e053-5e81-459d-908c-81cb81b395b6.png)
 My project is based off a [YouTube](https://www.youtube.com/watch?v=j59qQ7YWLxw) tutorial by a web developer called [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified).  This method was a fantastic learning experience as I was able to really put the core concepts into practise.
@@ -20,6 +18,12 @@ Andrey Los's [SandBox](https://codesandbox.io/s/rwmo3ow4mm) was pivitol in pract
 
 ![CodePenCssCalcu](https://user-images.githubusercontent.com/108287233/204848280-69cb3634-fef6-4224-8a7f-eb5d86247f40.png)
 For CSS styling I drew inspiration from [gambhirsharma](https://codepen.io/gambhirsharma/pen/ExwBKop).
+
+## Colorway
+With the help from [Canva](https://www.canva.com/colors/color-wheel/) and thier free color wheel I chose the following, that was set using a linear gradient style rule in CSS.
+![SecondaryColorWayCalcu](https://user-images.githubusercontent.com/108287233/204856145-21f46fa5-2f1c-41f1-ada5-14e233f2254f.png)
+![MainColorWayCalcu](https://user-images.githubusercontent.com/108287233/204856168-5911b104-68e0-4933-a1e2-0fe12b6555da.png)
+
 
 
 # Credits 
