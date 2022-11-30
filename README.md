@@ -1,6 +1,8 @@
 # Basic Online Calculator
-
 A standard calculator that is used predominately online, a simple to use tool for solving a multitude of mathematical equations. 
+![pexels-tara-winstead-7111559](https://user-images.githubusercontent.com/108287233/204844741-5ea1b45d-31d6-4a4a-b3f3-285fe80fc986.jpg)
+
+ 
 
 ## Instructions
 
