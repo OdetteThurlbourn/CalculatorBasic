@@ -7,8 +7,9 @@ A standard calculator that is used predominately online, a simple to use tool fo
 
 By using a mouse select or ‘click’ the numbers on the calculator face, this can be in any sequence of your choosing.  Once you have selected the desired first set of integers, choose your operator; depending on the outcome required you can select from **‘x’** for multiplication, **‘÷’** for division, **‘-’** to subtract and of course **‘+’** for addition.
 Once you have selected your operator, enter the second set of  integers and ‘click’ on the **‘=’** sign to return your result which will be displayed on the calculator screen (display). 
+![RespCalcu](https://user-images.githubusercontent.com/108287233/204855821-736d8afe-2b36-44ad-b562-b62251f6252d.png)
 
-![amIresponsiveCalcu](https://user-images.githubusercontent.com/108287233/204845673-8a5a04eb-7540-401a-905d-9ab09cf9af53.png)
+
 
 ## Inspiration
 ![ProjectInspiration](https://user-images.githubusercontent.com/108287233/204846027-b1b8e053-5e81-459d-908c-81cb81b395b6.png)
