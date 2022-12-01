@@ -1,6 +1,7 @@
 # Basic Online Calculator
 ___________________________
-A standard calculator that is used predominately online, a simple to use tool for solving a multitude of mathematical equations. 
+## A standard calculator that is used predominately online, a simple to use tool for solving a multitude of mathematical equations. 
+
 ![pexels-tara-winstead-7111559](https://user-images.githubusercontent.com/108287233/204844741-5ea1b45d-31d6-4a4a-b3f3-285fe80fc986.jpg)
 
 ## Instructions and User Features
@@ -16,12 +17,21 @@ Once you have selected your operator, enter the second set of  integers and ‘c
 
 -  Andrey Los's [SandBox](https://codesandbox.io/s/rwmo3ow4mm) was pivitol in practising the concepts of JavaScript in a contolled enviroment.
 
-![Sand![Sandbox](https://user-images.githubusercontent.com/108287233/204995747-d2cf90fd-647c-4bb0-8b50-6290d0d65703.png)
+![Sandbox](https://user-images.githubusercontent.com/108287233/205005842-a45ddf20-90ce-4a15-8eae-cb24de9f5d39.png)
+
+
 
 -  For CSS styling I drew inspiration from [gambhirsharma](https://codepen.io/gambhirsharma/pen/ExwBKop).
 
 ![CodePenCssCalcu](https://user-images.githubusercontent.com/108287233/204848280-69cb3634-fef6-4224-8a7f-eb5d86247f40.png)
 
+
+
+## Colorway
+-  With the help from [Canva](https://www.canva.com/colors/color-wheel/) and thier free color wheel I chose the following, that was set using a linear gradient style rule in CSS.
+
+![SecondaryColorWayCalcu](https://user-images.githubusercontent.com/108287233/204856145-21f46fa5-2f1c-41f1-ada5-14e233f2254f.png)
+![MainColorWayCalcu](https://user-images.githubusercontent.com/108287233/204856168-5911b104-68e0-4933-a1e2-0fe12b6555da.png)
 _________________________________
 ## A Brief History on the Calculator
 
@@ -38,15 +48,6 @@ We then skip to 1945 with the first handheld device invennted by Curt Herstark. 
 Japan became the front runner by inventing the first digital pocket calculator we all know and love and thus the 'Curta' calculator demand faded. 
 
 We owe these inventors a bif deal of gratitude as calculators have enhanced the ability to understand mathematics on a much larger sacle. 
-
-
-
-## Colorway
--  With the help from [Canva](https://www.canva.com/colors/color-wheel/) and thier free color wheel I chose the following, that was set using a linear gradient style rule in CSS.
-
-![SecondaryColorWayCalcu](https://user-images.githubusercontent.com/108287233/204856145-21f46fa5-2f1c-41f1-ada5-14e233f2254f.png)
-![MainColorWayCalcu](https://user-images.githubusercontent.com/108287233/204856168-5911b104-68e0-4933-a1e2-0fe12b6555da.png)
-
 
 
 # Credits 
