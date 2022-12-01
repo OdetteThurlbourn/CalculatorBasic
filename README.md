@@ -27,7 +27,7 @@ Japan became the front runner by inventing the first digital pocket calculator w
   
 
 We owe these inventors a big deal of gratitude as calculators have enhanced the ability to understand mathematics on a much larger scale.  
-
+___________________________________
 ## Instructions and User Features
 
 By using a mouse, select or ‘click’ the numbers on the calculator face, this can be in any sequence of your choosing.  Once you have selected the desired first set of integers, choose your operator; depending on the outcome required you can select from **‘x’** for multiplication, **‘÷’** for division, **‘-’** to subtract and of course **‘+’** for addition.
