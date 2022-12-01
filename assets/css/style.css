@@ -93,25 +93,28 @@ body {
   text-align: justify;
 }
 
-@media screen and {max-width: 406px;
+@media screen and {
+  max-width: 496px;
+
   .calcGrid {
     min-height: 10vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(6, 80px);
   }
-  
+
 }
 
-@media screen and {max-width: 320px;
+@media screen and {
+  max-width: 320px;
+
   .calcGrid {
-  
-    grid-template-columns: repeat(4, 70px);
+
+    grid-template-columns: repeat(4, 90px);
     grid-template-rows: minmax(80px, auto) repeat(6, 80px);
   }
-  
+
   #backspace {
     font-size: 0.8em;
   }
 
 }
-

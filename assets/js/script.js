@@ -13,7 +13,7 @@ class Calculator {
         this.priorOperand = '';
         this.operation = undefined;
     }
- 
+
     /* Set the presentOperand to the presentOperand and convert to a string
      * Using the .Slice function we want to get hte very last value of the string and chop it off
      * Going from the start of the index (0) to the second to last number (-1) in sequence
