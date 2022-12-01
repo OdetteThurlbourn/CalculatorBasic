@@ -39,16 +39,25 @@ _____________________________________
 ![CalcuHistory](https://user-images.githubusercontent.com/108287233/205004959-06bade90-1246-4787-b204-b5ee9fd28778.png)
 
 
-The first true calculator was invented by French inventor and mathmatician Blasie Pascal in 1642. The calculation were prefoemned through a clockwork-type
-mechanism.  This proved to be a difficult product to reproduce and so very few were ever made.
+The first true calculator was invented by French inventor and mathematician Blasie Pascal in 1642. The calculation was preformed through a clockwork-type 
 
-Thoms de Colar took his turn at inventing a calculator that was eaier to produce however, were sizable and comprehensive.
+mechanism.  This proved to be a difficult product to reproduce and so very few were ever made. 
 
-We then skip to 1945 with the first handheld device invennted by Curt Herstark.  SHaped like a portly pepper grinder, the 'Curta' calculators took off and produced in large quantities up until 1970.
+  
 
-Japan became the front runner by inventing the first digital pocket calculator we all know and love and thus the 'Curta' calculator demand faded. 
+Thoms de Colar took his turn at inventing a calculator that was easier to produce however, were sizable and comprehensive. 
 
-We owe these inventors a bif deal of gratitude as calculators have enhanced the ability to understand mathematics on a much larger sacle. 
+  
+
+We then skip to 1945 with the first handheld device invented by Curt Herstark.  Shaped like a portly pepper grinder, the 'Curta' calculators took off and produced in large quantities up until 1970. 
+
+  
+
+Japan became the front runner by inventing the first digital pocket calculator we all know and love and thus the 'Curta' calculator demand faded.  
+
+  
+
+We owe these inventors a big deal of gratitude as calculators have enhanced the ability to understand mathematics on a much larger scale.  
 
 # Testing
 __________________________
