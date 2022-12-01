@@ -95,9 +95,6 @@ body {
 
 @media screen and {max-width: 406px;
   .calcGrid {
-    display: grid;
-    justify-content: center;
-    align-content: center;
     min-height: 10vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(6, 80px);
@@ -107,10 +104,7 @@ body {
 
 @media screen and {max-width: 320px;
   .calcGrid {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: fit-content;
+  
     grid-template-columns: repeat(4, 70px);
     grid-template-rows: minmax(80px, auto) repeat(6, 80px);
   }

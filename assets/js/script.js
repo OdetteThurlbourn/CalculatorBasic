@@ -49,7 +49,7 @@ class Calculator {
      */
     //if statement - if no user input, no code must run using OR operator
     // Using Switch statement to allow for multiple if statments on a funtion
-    // else statement with 'defult' incase non of our operators were selected
+    // else statement with 'default' incase non of our operators were selected
     compute() {
         let computation;
         const prev = parseFloat(this.previousOperand);
