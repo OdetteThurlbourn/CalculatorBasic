@@ -1,42 +1,11 @@
 # Basic Online Calculator
-___________________________
 ## A standard calculator that is used predominately online, a simple to use tool for solving a multitude of mathematical equations. 
+_________________
 
-![pexels-tara-winstead-7111559](https://user-images.githubusercontent.com/108287233/204844741-5ea1b45d-31d6-4a4a-b3f3-285fe80fc986.jpg)
-
-## Instructions and User Features
-
-By using a mouse select or ‘click’ the numbers on the calculator face, this can be in any sequence of your choosing.  Once you have selected the desired first set of integers, choose your operator; depending on the outcome required you can select from **‘x’** for multiplication, **‘÷’** for division, **‘-’** to subtract and of course **‘+’** for addition.
-Once you have selected your operator, enter the second set of  integers and ‘click’ on the **‘=’** sign to return your result which will be displayed on the calculator screen (display). 
-![RespCalcu](https://user-images.githubusercontent.com/108287233/204855821-736d8afe-2b36-44ad-b562-b62251f6252d.png)
-
-## Inspiration
--  My project is based off a [YouTube](https://www.youtube.com/watch?v=j59qQ7YWLxw) tutorial by a web developer called [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified).  This method was a fantastic learning experience as I was able to really put the core concepts into practise.
-
-![ProjectInspiration](https://user-images.githubusercontent.com/108287233/204846027-b1b8e053-5e81-459d-908c-81cb81b395b6.png)
-
--  Andrey Los's [SandBox](https://codesandbox.io/s/rwmo3ow4mm) was pivitol in practising the concepts of JavaScript in a contolled enviroment.
-
-![Sandbox](https://user-images.githubusercontent.com/108287233/205005842-a45ddf20-90ce-4a15-8eae-cb24de9f5d39.png)
-
-
-
--  For CSS styling I drew inspiration from [gambhirsharma](https://codepen.io/gambhirsharma/pen/ExwBKop).
-
-![CodePenCssCalcu](https://user-images.githubusercontent.com/108287233/204848280-69cb3634-fef6-4224-8a7f-eb5d86247f40.png)
-
-
-
-## Colorway
--  With the help from [Canva](https://www.canva.com/colors/color-wheel/) and thier free color wheel I chose the following, that was set using a linear gradient style rule in CSS.
-
-![SecondaryColorWayCalcu](https://user-images.githubusercontent.com/108287233/204856145-21f46fa5-2f1c-41f1-ada5-14e233f2254f.png)
-![MainColorWayCalcu](https://user-images.githubusercontent.com/108287233/204856168-5911b104-68e0-4933-a1e2-0fe12b6555da.png)
-
-## A Brief History on the Calculator
-_____________________________________
 
 ![CalcuHistory](https://user-images.githubusercontent.com/108287233/205004959-06bade90-1246-4787-b204-b5ee9fd28778.png)
+## A Brief History on the Calculator
+_____________________________________
 
 
 The first true calculator was invented by French inventor and mathematician Blasie Pascal in 1642. The calculation was preformed through a clockwork-type 
@@ -59,6 +28,42 @@ Japan became the front runner by inventing the first digital pocket calculator w
 
 We owe these inventors a big deal of gratitude as calculators have enhanced the ability to understand mathematics on a much larger scale.  
 
+## Instructions and User Features
+
+By using a mouse select or ‘click’ the numbers on the calculator face, this can be in any sequence of your choosing.  Once you have selected the desired first set of integers, choose your operator; depending on the outcome required you can select from **‘x’** for multiplication, **‘÷’** for division, **‘-’** to subtract and of course **‘+’** for addition.
+Once you have selected your operator, enter the second set of  integers and ‘click’ on the **‘=’** sign to return your result which will be displayed on the calculator screen (display). 
+![amIresponsiveCalcu](https://user-images.githubusercontent.com/108287233/205053326-0ad9428d-1a5e-4530-bb3b-9670931b03d0.png)
+
+
+## Inspiration
+-  My project is based off a [YouTube](https://www.youtube.com/watch?v=j59qQ7YWLxw) tutorial by a web developer called [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified).  This method was a fantastic learning experience as I was able to really put the core concepts into practise.
+
+![ProjectInspiration](https://user-images.githubusercontent.com/108287233/204846027-b1b8e053-5e81-459d-908c-81cb81b395b6.png)
+
+-  Andrey Los's [SandBox](https://codesandbox.io/s/rwmo3ow4mm) was pivitol in practising the concepts of JavaScript in a contolled enviroment.
+
+![Sandbox](https://user-images.githubusercontent.com/108287233/205005842-a45ddf20-90ce-4a15-8eae-cb24de9f5d39.png)
+
+
+
+-  For CSS styling I drew inspiration from [gambhirsharma](https://codepen.io/gambhirsharma/pen/ExwBKop). What most excited me was the 'shadow' effect you can see on the buttons of the calculator.
+
+![CodePenCssCalcu](https://user-images.githubusercontent.com/108287233/204848280-69cb3634-fef6-4224-8a7f-eb5d86247f40.png)
+
+
+
+## Colorway
+-  With the help from [Canva](https://www.canva.com/colors/color-wheel/) and thier free color wheel I chose the following, that was set using a linear gradient style rule in CSS.
+
+![SecondaryColorWayCalcu](https://user-images.githubusercontent.com/108287233/204856145-21f46fa5-2f1c-41f1-ada5-14e233f2254f.png)
+![MainColorWayCalcu](https://user-images.githubusercontent.com/108287233/204856168-5911b104-68e0-4933-a1e2-0fe12b6555da.png)
+
+## Font
+
+- I styled the heading of the webpage with the use of a Google font namly, 'Nunito'. 
+![GoogleFontNunito](https://user-images.githubusercontent.com/108287233/205054962-5ce924b8-3904-4b26-82ba-47f793d41586.png)
+
+
 # Testing
 __________________________
 
@@ -67,29 +72,29 @@ __________________________
 ## Validator Testing
 
 **HTML**
-- Erroros returned from using 'data' types
+- No errors returned
 
-![htmlValidator](https://user-images.githubusercontent.com/108287233/205009415-69193484-f70c-419a-9e57-c457098b3892.png)
+![htmlValidator](https://user-images.githubusercontent.com/108287233/205055808-4f271a01-1969-4fdf-b0e1-36b1ef2da45d.png)
+
 
 **CSS**
-- No erroros returned
+- No errors returned
 
-![CssValidationCalcu](https://user-images.githubusercontent.com/108287233/205009839-5e766942-5add-4123-8724-1e79d17aa9a1.png)
+![CssValidationCalcu](https://user-images.githubusercontent.com/108287233/205055927-62b37cb9-c2c1-49c5-ae2e-1e44a1b7d2d5.png)
 
 
 **JavaScript**
-- Erroros returned
+- No errors returned
 
-![JSHintCalcuErrors](https://user-images.githubusercontent.com/108287233/205010219-597cde02-4798-402b-bc1c-266f212bb02e.png)
+![JSHintCalcuCode](https://user-images.githubusercontent.com/108287233/205056026-13caf029-1df7-470b-ac7a-f0e7381397ec.png)
+
 
 # Preformance
 
 **Lighthouse Score**
 
-![LightHouseScoreCalcu](https://user-images.githubusercontent.com/108287233/205010386-1867e7cb-6b53-4423-b0fd-27590a2d137e.png)
 
-
-
+![LightHouseScoreCalcu](https://user-images.githubusercontent.com/108287233/205056075-e13642e4-e827-4147-855e-dcd62bc90f1e.png)
 
 
 
@@ -127,3 +132,4 @@ To the following indivuduals and organisations I would like to attribute for my 
 This walkthrough method has made a huge contribution to my understanding of the core concepts, as my extensive 'comments' and 'Docstrings' can attribute throughout the project.
 - [Andrey Los](https://codesandbox.io/s/rwmo3ow4mm) from [Code Sand Box ](https://codesandbox.io/s/rwmo3ow4mm?file=/index.js) for a simple 'playground' to try out concepts in a controlled enviroment.
 - [gambhirsharma](https://codepen.io/gambhirsharma/pen/ExwBKop) from [CodePen](https://codepen.io/trending) for inspiration to use the 'box-shadow' css with calculator buttons.
+- README 'The Evolution of the Calculator' image credit [Nickzom Blog](https://www.nickzom.org/blog/tag/history-of-calculators/)
