@@ -11,13 +11,34 @@ Once you have selected your operator, enter the second set of  integers and ‘c
 
 ## Inspiration
 -  My project is based off a [YouTube](https://www.youtube.com/watch?v=j59qQ7YWLxw) tutorial by a web developer called [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified).  This method was a fantastic learning experience as I was able to really put the core concepts into practise.
+
 ![ProjectInspiration](https://user-images.githubusercontent.com/108287233/204846027-b1b8e053-5e81-459d-908c-81cb81b395b6.png)
 
-Andrey Los's [SandBox](https://codesandbox.io/s/rwmo3ow4mm) was pivitol in practising the concepts of JavaScript in a contolled enviroment.
+-  Andrey Los's [SandBox](https://codesandbox.io/s/rwmo3ow4mm) was pivitol in practising the concepts of JavaScript in a contolled enviroment.
+
 ![Sand![Sandbox](https://user-images.githubusercontent.com/108287233/204995747-d2cf90fd-647c-4bb0-8b50-6290d0d65703.png)
-box]
+
 -  For CSS styling I drew inspiration from [gambhirsharma](https://codepen.io/gambhirsharma/pen/ExwBKop).
+
 ![CodePenCssCalcu](https://user-images.githubusercontent.com/108287233/204848280-69cb3634-fef6-4224-8a7f-eb5d86247f40.png)
+
+_________________________________
+## A Brief History on the Calculator
+
+![CalcuHistory](https://user-images.githubusercontent.com/108287233/205004959-06bade90-1246-4787-b204-b5ee9fd28778.png)
+
+
+The first true calculator was invented by French inventor and mathmatician Blasie Pascal in 1642. The calculation were prefoemned through a clockwork-type
+mechanism.  This proved to be a difficult product to reproduce and so very few were ever made.
+
+Thoms de Colar took his turn at inventing a calculator that was eaier to produce however, were sizable and comprehensive.
+
+We then skip to 1945 with the first handheld device invennted by Curt Herstark.  SHaped like a portly pepper grinder, the 'Curta' calculators took off and produced in large quantities up until 1970.
+
+Japan became the front runner by inventing the first digital pocket calculator we all know and love and thus the 'Curta' calculator demand faded. 
+
+We owe these inventors a bif deal of gratitude as calculators have enhanced the ability to understand mathematics on a much larger sacle. 
+
 
 
 ## Colorway
