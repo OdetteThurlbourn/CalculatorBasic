@@ -18,7 +18,7 @@ Thoms de Colar took his turn at inventing a calculator that was easier to produc
 
   
 
-We then skip to 1945 with the first handheld device invented by Curt Herstark.  Shaped like a portly pepper grinder, the 'Curta' calculators took off and produced in large quantities up until 1970. 
+We then skip to 1942 with the first handheld device invented by Curt Herstark.  Shaped like a portly pepper grinder, the 'Curta' calculators took off and produced in large quantities up until 1970. 
 
   
 
