@@ -36,17 +36,17 @@ Once you have selected your operator, enter the second set of  integers and ‘c
 
 
 ## Inspiration
--  My project is based off a [YouTube](https://www.youtube.com/watch?v=j59qQ7YWLxw) tutorial by a web developer called [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified).  This method was a fantastic learning experience as I was able to really put the core concepts into practise.
+-  **My project is based off a [YouTube](https://www.youtube.com/watch?v=j59qQ7YWLxw) tutorial by a web developer called [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified).  This method was a fantastic learning experience as I was able to really put the core concepts into practise.**
 
 ![ProjectInspiration](https://user-images.githubusercontent.com/108287233/204846027-b1b8e053-5e81-459d-908c-81cb81b395b6.png)
 
--  Andrey Los's [SandBox](https://codesandbox.io/s/rwmo3ow4mm) was pivitol in practising the concepts of JavaScript in a contolled enviroment.
+-  **Andrey Los's [SandBox](https://codesandbox.io/s/rwmo3ow4mm) was pivitol in practising the concepts of JavaScript in a contolled enviroment.**
 
 ![Sandbox](https://user-images.githubusercontent.com/108287233/205005842-a45ddf20-90ce-4a15-8eae-cb24de9f5d39.png)
 
 
 
--  For CSS styling I drew inspiration from [gambhirsharma](https://codepen.io/gambhirsharma/pen/ExwBKop). What most excited me was the 'shadow' effect you can see on the buttons of the calculator.
+-  **For CSS styling I drew inspiration from [gambhirsharma](https://codepen.io/gambhirsharma/pen/ExwBKop). What most excited me was the 'shadow' effect you can see on the buttons of the calculator.**
 
 ![CodePenCssCalcu](https://user-images.githubusercontent.com/108287233/204848280-69cb3634-fef6-4224-8a7f-eb5d86247f40.png)
 
@@ -68,6 +68,9 @@ Once you have selected your operator, enter the second set of  integers and ‘c
 __________________________
 
 ## Bugs
+
+- No bugs detected after finaly testing.
+
 
 ## Validator Testing
 
