@@ -1,17 +1,17 @@
 // Setting all the inputs and functions for the calculator that will be called
 class Calculator {
     constructor(previousNum1, currentNum2) {
-        this.previousNum1 = previousNum1
-        this.currentNum2 = currentNum2
-        this.clear()
+        this.previousNum1 = previousNum1;
+        this.currentNum2 = currentNum2;
+        this.clear();
     }
 
     // Defining the specific functions of the calculator
     /* Defult to an empty string(1.presentOperand 2. previousOperand 3.operation) */
     clear() {
-        this.presentOperand = ''
-        this.priorOperand = ''
-        this.operation = undefined
+        this.presentOperand = '';
+        this.priorOperand = '';
+        this.operation = undefined;
     }
  
     /* Set the presentOperand to the presentOperand and convert to a string
@@ -19,14 +19,14 @@ class Calculator {
      * Going from the start of the index (0) to the second to last number (-1) in sequence
      */
     delete() {
-        this.presentOperand = this.presentOperand.toString().slice(0, -1)
+        this.presentOperand = this.presentOperand.toString().slice(0, -1);
     }
 
     /* Convert to a string because we want the numbers appended on the display, not added.*/
     //Add if statement so '.' can only be selected once
     appendNumber(number) {
-        if (number === '.' && this.presentOperand.includes('.')) return
-        this.presentOperand = this.presentOperand.toString() + number.toString()
+        if (number === '.' && this.presentOperand.includes('.')) return;
+        this.presentOperand = this.presentOperand.toString() + number.toString();
     }
 
     /* chooseOperation decides what happens when a user clicks on the calculator buttons 
@@ -35,13 +35,13 @@ class Calculator {
     //if statement - if curentOperand is '.' then return and do not execute further into the code
     // if statement  - if string is not empty and operation is selected compute that string (update variables as needed)
     chooseOperation(operation) {
-        if (this.presentOperand === '') return
+        if (this.presentOperand === '') return;
         if (this.previousOperand !== '') {
-            this.compute()
+            this.compute();
         }
-        this.operation = operation
-        this.previousOperand = this.presentOperand
-        this.presentOperand = ''
+        this.operation = operation;
+        this.previousOperand = this.presentOperand;
+        this.presentOperand = '';
     }
 
     /* Create variable that will be result of compute function
@@ -51,29 +51,29 @@ class Calculator {
     // Using Switch statement to allow for multiple if statments on a funtion
     // else statement with 'defult' incase non of our operators were selected
     compute() {
-        let computation
-        const prev = parseFloat(this.previousOperand)
-        const current = parseFloat(this.presentOperand)
-        if (isNaN(prev) || isNaN(current)) return
+        let computation;
+        const prev = parseFloat(this.previousOperand);
+        const current = parseFloat(this.presentOperand);
+        if (isNaN(prev) || isNaN(current)) return;
         switch (this.operation) {
             case '+':
-                computation = prev + current
-                break
+                computation = prev + current;
+                break;
             case '-':
-                computation = prev - current
-                break
+                computation = prev - current;
+                break;
             case '*':
-                computation = prev * current
-                break
+                computation = prev * current;
+                break;
             case '÷':
-                computation = prev / current
-                break
+                computation = prev / current;
+                break;
             default:
-                return
+                return;
         }
-        this.presentOperand = computation
-        this.operation = undefined
-        this.previousOperand = ''
+        this.presentOperand = computation;
+        this.operation = undefined;
+        this.previousOperand = '';
     }
 
     /* HELPER FUNCTION - Return a number but convert it to a display number 
@@ -86,21 +86,21 @@ class Calculator {
      * 
      */
     getDisplayNumber(number) {
-        const stringNumber = number.toString()
-        const integerDigits = parseFloat(stringNumber.split('.')[0])
-        const decimalDigits = stringNumber.split('.')[1]
-        let integerDisplay
+        const stringNumber = number.toString();
+        const integerDigits = parseFloat(stringNumber.split('.')[0]);
+        const decimalDigits = stringNumber.split('.')[1];
+        let integerDisplay;
         if (isNaN(integerDigits)) {
-            integerDisplay = ''
+            integerDisplay = '';
         } else {
             integerDisplay = integerDigits.toLocaleString('en', {
-                maximumFractionDigits: 0
-            })
+                maximumFractionDigits: 0;
+            });
         }
         if (decimalDigits != null) {
-            return `${integerDisplay}.${decimalDigits}`
+            return `${integerDisplay}.${decimalDigits}`;
         } else {
-            return integerDisplay
+            return integerDisplay;
         }
     }
     /* Display the previousOperand and after an operation has been selected, display the presentOperand
@@ -111,12 +111,12 @@ class Calculator {
     // Call getDisplayNumber fucntion
     updateDisplay() {
         this.currentNum2.innerText =
-            this.getDisplayNumber(this.presentOperand)
+            this.getDisplayNumber(this.presentOperand);
         if (this.operation != null) {
             this.previousNum1.innerText =
-                `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+                `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
         } else {
-            this.previousNum1.innerText = ''
+            this.previousNum1.innerText = '';
         }
     }
 }
@@ -127,18 +127,18 @@ class Calculator {
 
 // Assign const variables to the calculator elements
 
-const numberButtons = document.querySelectorAll('[dataNumber')
-const operationButtons = document.querySelectorAll('[dataOperation]')
+const numberButtons = document.querySelectorAll('[dataNumber');
+const operationButtons = document.querySelectorAll('[dataOperation]');
 // 'equals' is a single button, only need to use "querySelector"
-const equalsButton = document.querySelector('[data-equals]')
-const deleteButton = document.querySelector('[data-delete]')
-const allClearButton = document.querySelector('[dataAllClear]')
-const previousNum1 = document.querySelector('[data-previous-operand]')
-const currentNum2 = document.querySelector('[data-current-operand]')
+const equalsButton = document.querySelector('[data-equals]');
+const deleteButton = document.querySelector('[data-delete]');
+const allClearButton = document.querySelector('[dataAllClear]');
+const previousNum1 = document.querySelector('[data-previous-operand]');
+const currentNum2 = document.querySelector('[data-current-operand]');
 
 
 /* Define a new class name for calculator, pass the pervious and current operands in*/
-const calculator = new Calculator(previousNum1, currentNum2)
+const calculator = new Calculator(previousNum1, currentNum2);
 
 /* eventListeners for buttons 
  * append number onto display with whatever is inside that button
@@ -146,34 +146,34 @@ const calculator = new Calculator(previousNum1, currentNum2)
  */
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
-        calculator.appendNumber(button.innerText)
-        calculator.updateDisplay()
-    })
-})
+        calculator.appendNumber(button.innerText);
+        calculator.updateDisplay();
+    });
+});
 
 
 /* eventListener for operations */
 operationButtons.forEach(button => {
     button.addEventListener('click', () => {
-        calculator.chooseOperation(button.innerText)
-        calculator.updateDisplay()
-    })
-})
+        calculator.chooseOperation(button.innerText);
+        calculator.updateDisplay();
+    });
+});
 
 /* eventListener for equals button */
 equalsButton.addEventListener('click', button => {
-    calculator.compute()
-    calculator.updateDisplay()
-})
+    calculator.compute();
+    calculator.updateDisplay();
+});
 
 /* eventListener for allClear button */
 allClearButton.addEventListener('click', button => {
-    calculator.clear()
-    calculator.updateDisplay()
-})
+    calculator.clear();
+    calculator.updateDisplay();
+});
 
 /* eventListener for delete button */
 deleteButton.addEventListener('click', button => {
-    calculator.delete()
-    calculator.updateDisplay()
-})
+    calculator.delete();
+    calculator.updateDisplay();
+});
