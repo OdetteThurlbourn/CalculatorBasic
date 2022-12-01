@@ -50,6 +50,40 @@ Japan became the front runner by inventing the first digital pocket calculator w
 
 We owe these inventors a bif deal of gratitude as calculators have enhanced the ability to understand mathematics on a much larger sacle. 
 
+# Testing
+__________________________
+
+## Bugs
+
+## Validator Testing
+
+**HTML**
+- Erroros returned from using 'data' types
+
+![htmlValidator](https://user-images.githubusercontent.com/108287233/205009415-69193484-f70c-419a-9e57-c457098b3892.png)
+
+**CSS**
+- No erroros returned
+
+![CssValidationCalcu](https://user-images.githubusercontent.com/108287233/205009839-5e766942-5add-4123-8724-1e79d17aa9a1.png)
+
+
+**JavaScript**
+- Erroros returned
+
+![JSHintCalcuErrors](https://user-images.githubusercontent.com/108287233/205010219-597cde02-4798-402b-bc1c-266f212bb02e.png)
+
+# Preformance
+
+**Lighthouse Score**
+
+![LightHouseScoreCalcu](https://user-images.githubusercontent.com/108287233/205010386-1867e7cb-6b53-4423-b0fd-27590a2d137e.png)
+
+
+
+
+
+
 # Deployment to GitHub Pages
 ____________________________
 
