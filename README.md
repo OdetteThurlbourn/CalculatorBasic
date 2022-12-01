@@ -73,6 +73,16 @@ __________________________
 
 - No bugs detected after finaly testing.
 
+## Webpage Platforms
+
+Tests were carried out on the following web browsers and preformed as expected. 
+
+- **Google Chrome**
+- **FireFox**
+ - **Microsoft Edge**
+
+
+
 
 ## Validator Testing
 
