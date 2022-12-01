@@ -5,7 +5,7 @@ class Calculator {
         this.currentNum2 = currentNum2;
         this.clear();
     }
-
+​
     // Defining the specific functions of the calculator
     /* Defult to an empty string(1.presentOperand 2. previousOperand 3.operation) */
     clear() {
@@ -13,7 +13,7 @@ class Calculator {
         this.priorOperand = '';
         this.operation = undefined;
     }
-
+​
     /* Set the presentOperand to the presentOperand and convert to a string
      * Using the .Slice function we want to get hte very last value of the string and chop it off
      * Going from the start of the index (0) to the second to last number (-1) in sequence
@@ -21,14 +21,14 @@ class Calculator {
     delete() {
         this.presentOperand = this.presentOperand.toString().slice(0, -1);
     }
-
+​
     /* Convert to a string because we want the numbers appended on the display, not added.*/
     //Add if statement so '.' can only be selected once
     appendNumber(number) {
         if (number === '.' && this.presentOperand.includes('.')) return;
         this.presentOperand = this.presentOperand.toString() + number.toString();
     }
-
+​
     /* chooseOperation decides what happens when a user clicks on the calculator buttons 
      * Effectivley setting the function to clear out the previous operand and allowing a current operand to be set
      */
@@ -43,7 +43,7 @@ class Calculator {
         this.previousOperand = this.presentOperand;
         this.presentOperand = '';
     }
-
+​
     /* Create variable that will be result of compute function
      * Add parseFloat to convert string to a number
      */
@@ -75,7 +75,7 @@ class Calculator {
         this.operation = undefined;
         this.previousOperand = '';
     }
-
+​
     /* HELPER FUNCTION - Return a number but convert it to a display number 
      *Set number to a float value (parseFloat) - value is a string and must be converted to a number first
      */
@@ -94,7 +94,7 @@ class Calculator {
             integerDisplay = '';
         } else {
             integerDisplay = integerDigits.toLocaleString('en', {
-                maximumFractionDigits: 0;
+                maximumFractionDigits: 0
             });
         }
         if (decimalDigits != null) {
@@ -120,26 +120,26 @@ class Calculator {
         }
     }
 }
-
+​
 /* Using data attributes to select the operations instead of using HTML classes to avoid confusion 
  * Easier to see what elements are being used by JS and HTML
  */
-
+​
 // Assign const variables to the calculator elements
-
-const numberButtons = document.querySelectorAll('[dataNumber');
-const operationButtons = document.querySelectorAll('[dataOperation]');
+​
+const numberButtons = document.querySelectorAll('.dataNumber');
+const operationButtons = document.querySelectorAll('.dataOperation');
 // 'equals' is a single button, only need to use "querySelector"
-const equalsButton = document.querySelector('[data-equals]');
-const deleteButton = document.querySelector('[data-delete]');
-const allClearButton = document.querySelector('[dataAllClear]');
-const previousNum1 = document.querySelector('[data-previous-operand]');
-const currentNum2 = document.querySelector('[data-current-operand]');
-
-
+const equalsButton = document.querySelector('.data-equals');
+const deleteButton = document.querySelector('.data-delete');
+const allClearButton = document.querySelector('.dataAllClear');
+const previousNum1 = document.querySelector('.data-previous-operand');
+const currentNum2 = document.querySelector('.data-current-operand');
+​
+​
 /* Define a new class name for calculator, pass the pervious and current operands in*/
 const calculator = new Calculator(previousNum1, currentNum2);
-
+​
 /* eventListeners for buttons 
  * append number onto display with whatever is inside that button
  * Call calculator to update display
@@ -150,8 +150,8 @@ numberButtons.forEach(button => {
         calculator.updateDisplay();
     });
 });
-
-
+​
+​
 /* eventListener for operations */
 operationButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -159,19 +159,19 @@ operationButtons.forEach(button => {
         calculator.updateDisplay();
     });
 });
-
+​
 /* eventListener for equals button */
 equalsButton.addEventListener('click', button => {
     calculator.compute();
     calculator.updateDisplay();
 });
-
+​
 /* eventListener for allClear button */
 allClearButton.addEventListener('click', button => {
     calculator.clear();
     calculator.updateDisplay();
 });
-
+​
 /* eventListener for delete button */
 deleteButton.addEventListener('click', button => {
     calculator.delete();

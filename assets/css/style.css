@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-
 *,
 *::before,
 *::after {
@@ -7,15 +6,12 @@
   font-family: Nunito, sans-serif;
   font-weight: bolder;
 }
-
 body {
   padding: 0;
   margin: 0;
   background: linear-gradient(to right, #8794dd, #41BEAC)
 }
-
 /* Heading style rule */
-
 #heading {
   font-family: Nunito, sans-serif;
   text-decoration: none;
@@ -24,17 +20,17 @@ body {
   letter-spacing: 4px;
   margin-top: 1em;
 }
-
 /* Style rules for all  buttons and elements of calculator */
 .calcGrid {
   display: grid;
   justify-content: center;
   align-content: center;
   min-height: 100vh;
-  grid-template-columns: repeat(4, 125px);
+  max-width: 800px;
+  grid-template-columns: repeat(4, 25%);
   grid-template-rows: minmax(120px, auto) repeat(6, 80px);
+  margin: 0 auto;
 }
-
 .calcGrid>button {
   cursor: pointer;
   font-size: 2rem;
@@ -46,19 +42,15 @@ body {
     inset -5px -5px 15px rgba(0, 0, 0, 0.25),
     inset 5px 5px 15px rgba(0, 0, 0, 0.25);
 }
-
 .calcGrid>button:hover {
   background-color: rgba(83, 108, 155, 0.9);
 }
-
 .span-two {
   grid-column: span 2;
 }
-
 #backspace {
   font-size: 1em;
 }
-
 .output {
   grid-column: 1 / -1;
   background-color: rgba(0, 0, 0, .75);
@@ -70,19 +62,15 @@ body {
   word-wrap: break-word;
   word-break: break-all;
 }
-
 .output .previous-operand {
   color: rgba(255, 255, 255, .75);
   font-size: 1.5rem;
 }
-
 .output .current-operand {
   color: white;
   font-size: 2.5rem;
 }
-
 /* Footer style rule */
-
 .footer {
   font-family: Nunito, sans-serif;
   font-size: 0.5em;
