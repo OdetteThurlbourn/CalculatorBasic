@@ -140,6 +140,11 @@ ____________________________
 
 ![DeployWebsite](https://user-images.githubusercontent.com/108287233/205008093-cabfaca7-a2a6-4464-8c76-eeeb7f97c1f7.png)
 
+# Cloning of repository
+
+1. Naigate to main page of the choosen repository.
+
+2. 
 
 # Credits 
 ________________________
