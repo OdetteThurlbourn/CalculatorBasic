@@ -153,7 +153,7 @@ ____________________________
 
 ![RepoUrl](https://user-images.githubusercontent.com/108287233/205248720-de080bee-2ff6-4822-b6fa-7e1be49d9af6.png)
 
-4. Open Git BAch.
+4. Open Git Bash.
 
 5. Change working directory to location where the clone directory will be stored.
 
