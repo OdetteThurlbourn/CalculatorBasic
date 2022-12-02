@@ -71,7 +71,11 @@ __________________________
 
 ## Bugs
 
-- No bugs detected after finaly testing.
+| **Function**           | **Bug Description**                            |  **Solution**                                |  
+|------------------------|------------------------------------------------|----------------------------------------------|
+| Multiplication         | Multiplication function was not returning.     | 'Step' through 'compute' if statment and found asterics '*' in place of 'x' symbol.  |                                                           |                        |                            |------------------------|-------------------------------------------------|-----------------------------------------------|                                       
+                                                                      
+                      
 
 ## Webpage Platforms
 
@@ -79,9 +83,7 @@ Tests were carried out on the following web browsers and preformed as expected.
 
 - **Google Chrome**
 - **FireFox**
- - **Microsoft Edge**
-
-
+- **Microsoft Edge**
 
 
 ## Validator Testing
