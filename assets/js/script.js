@@ -8,6 +8,7 @@ class Calculator {
 
     // Defining the specific functions of the calculator
     /* Defult to an empty string(1.presentOperand 2. previousOperand 3.operation) */
+    /* Code credit to: Web Dev Simplified */
     clear() {
         this.presentOperand = '';
         this.priorOperand = '';
@@ -50,6 +51,7 @@ class Calculator {
     //if statement - if no user input, no code must run using OR operator
     // Using Switch statement to allow for multiple if statments on a funtion
     // else statement with 'default' incase non of our operators were selected
+    /* Code credit to: Web Dev Simplified */
     compute() {
         let computation;
         const prev = parseFloat(this.previousOperand);
@@ -82,9 +84,8 @@ class Calculator {
     // if statement - if float number is NaN, return empty string ''
     // if the return is a number tolocalString then return a number in a language i.e English (en).
     // Commas will be added to the number the longer it gets, becasue we have changed the number into a Float value
-    /* Split number and decimal so that decimal cannot be called on its own
-     * 
-     */
+    /* Split number and decimal so that decimal cannot be called on its own*/
+    /* Code credit to: Web Dev Simplified */
     getDisplayNumber(number) {
         const stringNumber = number.toString();
         const integerDigits = parseFloat(stringNumber.split('.')[0]);
@@ -109,6 +110,7 @@ class Calculator {
     // if statement - if the previousOperand is not (!=) equal to null then display the previousOperand
     // create a 'concatenation ${}'(method merges the contents of two or more strings) 
     // Call getDisplayNumber fucntion
+    /* Code credit to: Web Dev Simplified */
     updateDisplay() {
         this.currentNum2.innerText =
             this.getDisplayNumber(this.presentOperand);
@@ -142,8 +144,8 @@ const calculator = new Calculator(previousNum1, currentNum2);
 
 /* eventListeners for buttons 
  * append number onto display with whatever is inside that button
- * Call calculator to update display
- */
+ * Call calculator to update display*/
+/* Code credit to: Web Dev Simplified */
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText);
@@ -153,6 +155,7 @@ numberButtons.forEach(button => {
 
 
 /* eventListener for operations */
+/* Code credit to: Web Dev Simplified */
 operationButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.chooseOperation(button.innerText);
@@ -161,18 +164,21 @@ operationButtons.forEach(button => {
 });
 
 /* eventListener for equals button */
+/* Code credit to: Web Dev Simplified */
 equalsButton.addEventListener('click', button => {
     calculator.compute();
     calculator.updateDisplay();
 });
 
 /* eventListener for allClear button */
+/* Code credit to: Web Dev Simplified */
 allClearButton.addEventListener('click', button => {
     calculator.clear();
     calculator.updateDisplay();
 });
 
 /* eventListener for delete button */
+/* Code credit to: Web Dev Simplified */
 deleteButton.addEventListener('click', button => {
     calculator.delete();
     calculator.updateDisplay();
