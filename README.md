@@ -144,7 +144,22 @@ ____________________________
 
 1. Naigate to main page of the choosen repository.
 
-2. 
+2. Naviagte to the 'Code' icon and select.
+
+![Code](https://user-images.githubusercontent.com/108287233/205248879-b8c8923a-b81d-4de9-b264-9a15ba022dc3.png)
+
+
+3. Click the URL for the repository.
+
+![RepoUrl](https://user-images.githubusercontent.com/108287233/205248720-de080bee-2ff6-4822-b6fa-7e1be49d9af6.png)
+
+4. Open Git BAch.
+
+5. Change working directory to location where the clone directory will be stored.
+
+6. Type **git clone** and then paste copied URL.
+
+7. Press **Enter**, and now your cloned repository will be created.
 
 # Credits 
 ________________________
